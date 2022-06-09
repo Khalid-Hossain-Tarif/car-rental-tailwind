@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+    * {
+        font-family: 'Ubuntu', sans-serif;
+    }
+}
+
+@layer components {
+    p {
+        margin-bottom: 1.25rem;
+    }
+}
+
+@layer utilities {
+    .banner-shape {
+        clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 100%, 50% 100%, 0 80%);
+    }
+    .main-heading {
+        @apply font-bold text-black/80 text-3xl lg:text-4xl;
+    }
+    .heading-border {
+        @apply w-8 h-1 mt-5 bg-red-600;
+    }
+    .primary-btn,
+    .secondary-btn {
+        @apply py-2 lg:py-3 px-4 lg:px-6 text-sm; 
+    }
+    .primary-btn {
+        @apply text-white bg-red-600; 
+    }
+    .secondary-btn {
+        @apply text-black/70 bg-transparent hover:bg-red-600 hover:text-white; 
+    }
+}
+
+
+.navigation nav {
+    display: none;
+}
+
+.navigation.active nav {
+    display: block;
+}
