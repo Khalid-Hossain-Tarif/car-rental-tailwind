@@ -37,10 +37,12 @@
     }
 }
 
-
 .navigation nav {
     display: none;
-}
+    position: absolute;
+    right: 18px;
+    margin-top: 20px;
+  }
 
 .navigation.active nav {
     display: block;
